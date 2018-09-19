@@ -1,5 +1,3 @@
-[![Coverage Status](https://coveralls.io/repos/github/zerodom30/node-rsi/badge.svg?branch=master)](https://coveralls.io/github/zerodom30/node-rsi?branch=master)
-
 # node-roc
 
 A simple node module to calculate the Rate of Change and avoid JavaScript precision issues.
@@ -21,10 +19,26 @@ const data = [
 ]
 
 
-
+const roc = new ROC(data, 5);
+roc.calculate((err, data) => {
+    console.log('data:', data)
+});
 ```
 
-###### Commit Message With Emoji Prefix
-See reference [here](https://gist.github.com/parmentf/035de27d6ed1dce0b36a)
- inspiration & reference by
-  [dannyfritz/commit-message-emoji](https://github.com/dannyfritz/commit-message-emoji).
+## Returns:
+
+```
+[
+    { value: 52.00 },
+    { value: 51.00 },
+    { value: 51.50 },
+    { value: 48.50 },
+    { value: 53.00 },
+    { value: 53.50, momentum: 1.50, closingPrice: 52.00, roc: 2.8846153846153846 },
+    { value: 53.50, momentum: 2.50, closingPrice: 51.00, roc: 4.901960784313726 },
+    { value: 54.00, momentum: 2.50, closingPrice: 51.50, roc: 4.854368932038835 },
+    { value: 54.00, momentum: 5.50, closingPrice: 48.50, roc: 11.34020618556701 },
+    { value: 55.00, momentum: 2.00, closingPrice: 53.00, roc: 3.7735849056603774 }
+];
+```
+

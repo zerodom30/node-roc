@@ -1,0 +1,30 @@
+{
+  "name": "node-roc",
+  "version": "1.0.0",
+  "description": "Simple Rate of Change Calculator",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "roc",
+    "rate",
+    "of",
+    "change",
+    "TA",
+    "technical-analysis"
+  ],
+  "author": "zerodom30",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.6.1",
+    "decimal.js": "^10.0.1"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "should": "^13.2.3"
+  }
+}

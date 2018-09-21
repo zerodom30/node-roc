@@ -1,6 +1,4 @@
 'use strict'
-
-const async = require('async');
 const Decimal = require('decimal.js');
 
 class ROC {
@@ -19,8 +17,6 @@ class ROC {
     }
 
     calculateROC(callback) {
-        //(Closing Price [today] - Closing Price [n days ago]) / Closing Price [n days ago] * 100
-        let rs = 0;
         const data = [];
         const values = this.values;
 

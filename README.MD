@@ -1,4 +1,4 @@
-# node-roc
+# node-roc: Technical Indicator for Rate of Change
 
 A simple node module to calculate the Rate of Change and avoid JavaScript precision issues.
 

@@ -23,10 +23,10 @@
     "async": "^2.6.3",
     "decimal.js": "^10.2.0",
     "lodash": "^4.17.21",
-    "mocha": "^5.2.0"
+    "mocha": "^10.2.0"
   },
   "devDependencies": {
-    "mocha": "^5.2.0",
+    "mocha": "^10.2.0",
     "nyc": "^14.1.1",
     "should": "^13.2.3"
   }
